@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Header from '../components/header';
-import styles from '../styles/home.module.css';
+import styles from '../styles/Home.module.css';
 // import Banner from '../components/community/Banner';
 // import CreatePost from '../components/feed/CreatePost';
 // import About from '../components/community/About';
