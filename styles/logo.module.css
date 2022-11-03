@@ -1,0 +1,16 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
+}
+.logo_image {
+    height: 18px;
+    width: auto;
+    margin: 5px;
+}
+.logo_size {
+    height: 18px;
+    width: 18px;
+}

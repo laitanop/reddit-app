@@ -1,0 +1,36 @@
+.header {
+    height: 3.5rem;
+    display: flex;
+    z-index: 50;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    color: white;
+    opacity: 1;
+    background-color: #1a1a1b;
+}
+
+.wrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    opacity: 1;
+    background-color: #1a1a1b;
+
+    flex: 1 1 0%;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.leftHeader {
+    align-items: center;
+    flex: 1 1 0%;
+    display: flex;
+    color: white;
+}
+.rightHeader {
+    align-items: center;
+    display: flex;
+    color: white;
+}
