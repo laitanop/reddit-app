@@ -12,13 +12,16 @@ const Home: NextPage = () => {
             <Header />
             <Box className={styles.box_container}>
                 <Grid container spacing={2}>
-                    <Grid md={8}>
+                    <Grid xs={12} md={8} lg={8}>
                         <Box className={styles.feed_container}>
                             <Feed />
                         </Box>
                     </Grid>
-                    <Grid md={4}>
-                        <Box className={styles.about_container}>
+                    <Grid md={4} lg={4}>
+                        <Box
+                            className={styles.about_container}
+                            display={{ xs: 'none', lg: 'block' }}
+                        >
                             {' '}
                             <About />
                         </Box>

@@ -13,8 +13,14 @@
 .box_container {
     flex-grow: 1;
     margin-top: 70px;
-    width: 1000px;
+
     align-self: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .box_container {
+        width: 1000px;
+    }
 }
 .feed_container {
     margin: 5px;
