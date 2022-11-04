@@ -9,3 +9,18 @@
 .banner {
     margin-top: 200px;
 }
+
+.box_container {
+    flex-grow: 1;
+    margin-top: 70px;
+    width: 1000px;
+    align-self: center;
+}
+.feed_container {
+    margin: 5px;
+    padding: 5px;
+}
+.about_container {
+    margin: 5px;
+    padding: 5px;
+}
