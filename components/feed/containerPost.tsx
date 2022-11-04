@@ -4,9 +4,10 @@ import styles from '../../styles/feed.module.css';
 
 type Props = {
     postList: any;
+    key: number;
 };
 
-const ContainerPost = ({ postList }: Props) => {
+const ContainerPost = ({ postList, key }: Props) => {
     console.log('postList', postList);
     return (
         <Box className={styles.post_container}>

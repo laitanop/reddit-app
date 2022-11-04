@@ -7,7 +7,7 @@ import { supabase } from '../../services/supabaseclient';
 type Props = {};
 
 const Feed = (props: Props) => {
-    const [myPosts, setMyPosts] = useState<string[]>([]);
+    const [myPosts, setMyPosts] = useState<any[]>([]);
     const [error, setError] = useState('');
 
     useEffect(() => {
