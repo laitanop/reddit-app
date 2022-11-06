@@ -8,27 +8,9 @@ type Props = {};
 
 const Feed = (props: Props) => {
     const [myPosts, setMyPosts] = useState<any[]>([]);
-    const [author, setAuthor] = useState('');
-    const [title, setTitle] = useState('');
-    const [content, setContent] = useState('');
+
     const [error, setError] = useState('');
 
-    const handleCreatePost = async () => {
-        const { error } = await supabase.from('feed').insert({
-            author: 'Denmark',
-            title: title,
-            content: content,
-        });
-    };
-
-    const handleChangeTitle = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setTitle(event.target.value);
-    };
-    const handleChangeContent = (
-        event: React.ChangeEvent<HTMLInputElement>
-    ) => {
-        setContent(event.target.value);
-    };
     useEffect(() => {
         const fetchFeed = async () => {
             const { data, error } = await supabase.from('feed').select();
@@ -46,10 +28,7 @@ const Feed = (props: Props) => {
 
     return (
         <div>
-            <CreatePost
-                handleChangeTitle={handleChangeTitle}
-                handleChangeContent={handleChangeContent}
-            />
+            <CreatePost />
             {myPosts.map((item) => (
                 <ContainerPost postList={item} key={item.id} />
             ))}

@@ -4,12 +4,9 @@ import styles from '../../styles/feed.module.css';
 import Box from '@mui/material/Box';
 import { CreatePostIcon } from '../../assets/CreatePostIcon';
 
-type Props = {
-    handleChangeTitle: (event: React.ChangeEvent<HTMLInputElement>) => void;
-    handleChangeContent: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
+type Props = {};
 
-const CreatePost = ({ handleChangeTitle, handleChangeContent }: Props) => {
+const CreatePost = (props: Props) => {
     const router = useRouter();
     return (
         <Box className={styles.create_container}>

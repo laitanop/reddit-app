@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '@mui/material/Box';
+import { Box, Typography } from '@mui/material';
 import styles from '../../styles/feed.module.css';
 
 type Props = {
@@ -8,12 +8,21 @@ type Props = {
 };
 
 const ContainerPost = ({ postList, key }: Props) => {
-    console.log('postList', postList);
     return (
         <Box className={styles.post_container}>
-            {postList.author}
-            {postList.title}
-            {postList.content}
+            <Typography variant="body2" component="h2">
+                &bull; Posted by {postList.author}
+            </Typography>
+
+            <br />
+            <Typography variant="h6" component="h2">
+                {postList.title}
+            </Typography>
+
+            <br />
+            <Typography variant="body2" component="h2">
+                {postList.content}
+            </Typography>
         </Box>
     );
 };
