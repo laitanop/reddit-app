@@ -1,15 +1,17 @@
-import type { NextPage } from 'next';
-import Feed from '../components/feed/feed';
+import React from 'react';
 import NavbarLayout from '../components/layout/NavbarLayout';
 import Layout from '../components/layout/Layout';
-const Home: NextPage = () => {
+import SubmitContainer from '../components/submit/SubmitContainer';
+
+type Props = {};
+
+const submit = (props: Props) => {
     return (
         <NavbarLayout>
             <Layout>
-                <Feed />
+                <SubmitContainer />
             </Layout>
         </NavbarLayout>
     );
 };
-
-export default Home;
+export default submit;
